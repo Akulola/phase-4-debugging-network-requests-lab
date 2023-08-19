@@ -63,11 +63,18 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  500 NameError with unitialized constant "ToysController::Toys". 
+  Error on ToysController, use of Toys instead of Toy
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  Error message : Uncaught (in promise) SyntaxError: Unexpected end of JSON input
+  Check whether the response is being rendered on update in toys_Controller
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+ Error: DELETE http://localhost:4000/toys/3 404 (Not Found)
+ Check if route for handling the delete request endpoint exists.
+ Add the route 
